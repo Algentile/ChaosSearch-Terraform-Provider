@@ -21,6 +21,6 @@ pipelines:
           script:
             - git pull origin master
             - git remote add github git@github.com:ChaosSearch/ChaosSearch-Terraform-Provider.git
-            - git checkout -b $VERSION_STAGING
-            - git push -u github $VERSION_STAGING
+            - git checkout -b ${VERSION}_STAGING
+            - git push -u github ${VERSION}_STAGING
             - git tag $VERSION && git push github $VERSION
