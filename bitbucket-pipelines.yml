@@ -23,4 +23,4 @@ pipelines:
             - git remote add github git@github.com:ChaosSearch/ChaosSearch-Terraform-Provider.git
             - git checkout -b ${VERSION}_STAGING
             - git push -u github ${VERSION}_STAGING
-            - git tag ${VERSION}_STAGING && git push github ${VERSION}_STAGING
+            - git tag STAGING_${VERSION} && git push github STAGING_${VERSION}
